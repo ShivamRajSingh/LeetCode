@@ -4,6 +4,18 @@ using namespace std;
 
 ll inf = 1e9;
 
+vector<vector<int>> input(int n, int m)
+{
+    cout << "Enter elements in matrix : ";
+    vector<vector<int>> mat(n, vector<int> (m));
+    for(int i =0; i < n; i++){
+        for(int j =0; j < m; j++){
+            cin >> mat[i][j];
+        }
+    }
+    return mat;
+}
+
 vector<int> input()
 {
     int n;
